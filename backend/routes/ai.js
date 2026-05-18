@@ -25,7 +25,7 @@ Provide the response in a structured Markdown format.`;
     const response = await axios.post(
       'https://openrouter.ai/api/v1/chat/completions',
       {
-        model: 'google/gemini-2.5-pro',
+        model: 'google/gemini-pro',
         messages: [{ role: 'user', content: prompt }]
       },
       {
